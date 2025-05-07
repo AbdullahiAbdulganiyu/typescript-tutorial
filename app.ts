@@ -20,3 +20,11 @@ enum Direction {
   Right = "RIGHT",
   Left = "LEFT",
 }
+
+let b: unknown = 1;
+
+if (typeof b === "number") {
+  const calc = b + 1;
+} else if (typeof b === "string") {
+  const calc2 = b + "hello";
+}
