@@ -28,3 +28,8 @@ if (typeof b === "number") {
 } else if (typeof b === "string") {
   const calc2 = b + "hello";
 }
+
+let d: any = 4;
+
+const result = d + 2;
+const result2 = d + "nice";
