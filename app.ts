@@ -1,6 +1,7 @@
 let x: number = 3;
 let y: string = "Three";
 let z: boolean = true;
+let a: number | string = 3;
 
 const arr: number[] = [1, 2, 3];
 const arr2: string[] = ["1", "2", "3"];
