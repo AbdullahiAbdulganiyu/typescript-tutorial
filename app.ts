@@ -29,6 +29,8 @@ if (typeof b === "number") {
   const calc2 = b + "hello";
 }
 
+const result0 = (b as number) + 1;
+
 let d: any = 4;
 
 const result = d + 2;
