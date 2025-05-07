@@ -35,3 +35,7 @@ let d: any = 4;
 
 const result = d + 2;
 const result2 = d + "nice";
+
+const objArr = [{ name: "tim" }, { name: "joe" }, { name: "jade" }];
+
+const el = objArr.pop()?.name;
