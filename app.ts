@@ -6,6 +6,7 @@ let a: number | string = 3;
 const arr: number[] = [1, 2, 3];
 const arr2: string[] = ["1", "2", "3"];
 
+// making the data type of arr3 array either be number or string(all items inside array must be of thesame data type)
 const arr3: number[] | string[] = ["1", "2"];
 
 enum Size {
@@ -21,44 +22,51 @@ enum Direction {
   Left = "LEFT",
 }
 
+// setting the data data type of b to unknown so that it can be any data type
 let b: unknown = 1;
-
+// accounting for the data type that b can be
 if (typeof b === "number") {
   const calc = b + 1;
 } else if (typeof b === "string") {
   const calc2 = b + "hello";
 }
 
+// casting the data type of b
 const result0 = (b as number) + 1;
 
+// setting the data type of d to be of any data type. The difference between any and unknown is that in any the various data type for the variable would not need to be accounted for but for unknown possible data type of the variable need to be accounted for
 let d: any = 4;
-
+// assing a value to the d without needing to account for the various data types because it's data type was declared to be any
 const result = d + 2;
 const result2 = d + "nice";
 
 const objArr = [{ name: "tim" }, { name: "joe" }, { name: "jade" }];
-
+// optional chaining because the result of .pop() can either be a string or undefined
 const el = objArr.pop()?.name;
 
 const objArr2 = [[{ name: "timo" }]];
 
 const el2 = objArr2.pop()?.pop()?.name;
-
+// using bang to force the data the .pop() to be a string
 const el3 = objArr2.pop()!.pop()!.name;
 
+// creating a function without assigning the data type it would return
 function add(x: number, y: number) {
   return x + y;
 }
 
+// creating a function and assigning the data type it would return
 function add2(x: number, y: number): number {
   return x + y;
 }
 
+// A function with an optional parameter of middleName
 function makeName(firstName: string, lastName: string, middleName?: string) {
   if (middleName) return firstName + " " + middleName + " " + lastName;
   return firstName + " " + lastName;
 }
 
+// a function that recieves a function and using arrow function to assign the return data type of the passed function
 function callFunc(
   func: (f: string, l: string, m?: string) => string,
   param1: string,
