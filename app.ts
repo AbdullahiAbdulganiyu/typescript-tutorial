@@ -39,3 +39,7 @@ const result2 = d + "nice";
 const objArr = [{ name: "tim" }, { name: "joe" }, { name: "jade" }];
 
 const el = objArr.pop()?.name;
+
+const objArr2 = [[{ name: "timo" }]];
+
+const el2 = objArr2.pop()?.pop()?.name;
