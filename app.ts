@@ -49,3 +49,7 @@ const el3 = objArr2.pop()!.pop()!.name;
 function add(x: number, y: number) {
   return x + y;
 }
+
+function add2(x: number, y: number): number {
+  return x + y;
+}
