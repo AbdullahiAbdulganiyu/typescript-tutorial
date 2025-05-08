@@ -74,3 +74,35 @@ function callFunc(
 ) {
   func(param1, param2);
 }
+
+function mul(x: number, y: number) {
+  return x * y;
+}
+
+function div(x: number, y: number) {
+  return x / y;
+}
+
+// a function that accepts an array of functions and a tuple of values
+function applyFunc(
+  funcs: ((a: number, b: number) => number)[],
+  // an array of array = tuple ,of number data type e.g [[2,3],[4,5]]
+  values: [number, number][]
+): number[] {
+  const results = [] as number[];
+  for (let i = 0; i < funcs.length; i++) {
+    const args = values[i];
+    const result = funcs[i](args[0], args[1]);
+    results.push(result);
+  }
+  return results;
+}
+
+// calling the function by passing an array of function and an array of arrays (tuple)
+applyFunc(
+  [mul, div],
+  [
+    [2, 3],
+    [4, 5],
+  ]
+);
