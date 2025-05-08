@@ -58,3 +58,11 @@ function makeName(firstName: string, lastName: string, middleName?: string) {
   if (middleName) return firstName + " " + middleName + " " + lastName;
   return firstName + " " + lastName;
 }
+
+function callFunc(
+  func: (f: string, l: string, m?: string) => string,
+  param1: string,
+  param2: string
+) {
+  func(param1, param2);
+}
