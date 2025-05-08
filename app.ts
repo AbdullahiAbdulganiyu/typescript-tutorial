@@ -53,3 +53,8 @@ function add(x: number, y: number) {
 function add2(x: number, y: number): number {
   return x + y;
 }
+
+function makeName(firstName: string, lastName: string, middleName?: string) {
+  if (middleName) return firstName + " " + middleName + " " + lastName;
+  return firstName + " " + lastName;
+}
