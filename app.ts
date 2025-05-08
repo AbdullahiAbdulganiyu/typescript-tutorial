@@ -43,3 +43,9 @@ const el = objArr.pop()?.name;
 const objArr2 = [[{ name: "timo" }]];
 
 const el2 = objArr2.pop()?.pop()?.name;
+
+const el3 = objArr2.pop()!.pop()!.name;
+
+function add(x: number, y: number) {
+  return x + y;
+}
