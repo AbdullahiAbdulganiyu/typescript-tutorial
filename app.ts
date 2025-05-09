@@ -108,6 +108,7 @@ applyFunc(
 );
 
 // an overloaded function
+// creating an overloaded function that returns unknown you create a function with thesame name with the function that handle different data types possible like the example below
 function getItemLength(name: string): number;
 function getItemLength(names: string[]): string;
 function getItemLength(nameOrNames: unknown): unknown {
