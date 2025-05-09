@@ -166,3 +166,16 @@ const worker: employee = {
     console.log(this.employeeId);
   },
 };
+
+// Class
+
+class People {
+  name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log(`Hello my name is ${this.name}`);
+  }
+}
