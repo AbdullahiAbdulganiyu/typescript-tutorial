@@ -193,3 +193,14 @@ class People {
 }
 
 const p1 = new People("tim");
+
+// creating an abstact class
+
+// an abstract function is a function that an instance can not be created on. But a class can extend it
+abstract class Animal {
+  abstract makeSound(duration: number): void;
+  move(duration: number) {
+    console.log("Moving along.....");
+    this.makeSound(duration);
+  }
+}
