@@ -179,3 +179,5 @@ class People {
     console.log(`Hello my name is ${this.name}`);
   }
 }
+
+const p1 = new People("tim");
