@@ -137,10 +137,14 @@ interface Person {
   age: number;
   // creating an optional attribute by adding ?
   heigth?: number;
+  hello: () => void;
 }
 
 // using the interface to create an object
 const person: Person = {
   name: "Abdullahi",
   age: 0,
+  hello: function () {
+    console.log(this.name + " says hi");
+  },
 };
