@@ -204,3 +204,10 @@ abstract class Animal {
     this.makeSound(duration);
   }
 }
+
+class Dog extends Animal {
+  // when inheriting an abstarct class all the abstract mwthods need to be implemented
+  makeSound(duration: number): void {
+    console.log("woof woof");
+  }
+}
