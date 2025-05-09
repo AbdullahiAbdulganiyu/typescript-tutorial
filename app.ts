@@ -170,7 +170,7 @@ const worker: employee = {
 // Class
 
 class People {
-  name: string;
+  private name: string;
   constructor(name: string) {
     this.name = name;
   }
