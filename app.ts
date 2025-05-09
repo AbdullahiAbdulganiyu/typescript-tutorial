@@ -106,3 +106,20 @@ applyFunc(
     [4, 5],
   ]
 );
+
+// an overloaded function
+function getItemLength(name: string): number;
+function getItemLength(names: string[]): string;
+function getItemLength(nameOrNames: unknown): unknown {
+  if (nameOrNames === "string") {
+    return nameOrNames.length;
+  } else if (Array.isArray(nameOrNames)) {
+    return "This is an Array";
+  }
+}
+
+// returns a number
+getItemLength("");
+
+// returns a string
+getItemLength(["", ""]);
