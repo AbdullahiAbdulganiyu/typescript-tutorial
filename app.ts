@@ -130,3 +130,17 @@ getItemLength("");
 
 // returns a string
 getItemLength(["", ""]);
+
+// Basic interface
+interface Person {
+  name: string;
+  age: number;
+  // creating an optional attribute by adding ?
+  heigth?: number;
+}
+
+// using the interface to create an object
+const person: Person = {
+  name: "Abdullahi",
+  age: 0,
+};
