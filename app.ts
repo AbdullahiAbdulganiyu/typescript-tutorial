@@ -184,6 +184,12 @@ class People {
     if (this.name.length < 2) "";
     return this.name;
   }
+
+  setName(name: string) {
+    // adding a guard clause that account for empty/no name is passed
+    if (name.length < 2) return;
+    this.name = name;
+  }
 }
 
 const p1 = new People("tim");
