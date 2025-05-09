@@ -148,3 +148,21 @@ const person: Person = {
     console.log(this.name + " says hi");
   },
 };
+
+// advanced use of interface
+
+// an interface exyending another interface
+interface employee extends Person {
+  employeeId: number;
+}
+
+// creating an obejct using the extended interface
+const worker: employee = {
+  name: "tim",
+  age: 23,
+  heigth: 10,
+  employeeId: 12,
+  hello: function () {
+    console.log(this.employeeId);
+  },
+};
