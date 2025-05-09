@@ -170,6 +170,7 @@ const worker: employee = {
 // Class
 
 class People {
+  // acces modifiers include: private, protected, public: which is the default
   private name: string;
   constructor(name: string) {
     this.name = name;
