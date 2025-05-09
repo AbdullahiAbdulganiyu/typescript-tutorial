@@ -178,6 +178,12 @@ class People {
   greet() {
     console.log(`Hello my name is ${this.name}`);
   }
+
+  getName() {
+    // adding a guard clause that account for empty name
+    if (this.name.length < 2) "";
+    return this.name;
+  }
 }
 
 const p1 = new People("tim");
