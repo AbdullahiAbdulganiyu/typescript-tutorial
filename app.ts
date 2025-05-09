@@ -1,3 +1,9 @@
+// satrting typescript, you follow the following process
+// 1. npm install -g typescript
+// 2. npm init -y
+// 3. npm install typescript --save-dev
+// 4. npx tsc --init
+
 let x: number = 3;
 let y: string = "Three";
 let z: boolean = true;
