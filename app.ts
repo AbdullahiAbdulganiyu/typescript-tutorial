@@ -211,3 +211,5 @@ class Dog extends Animal {
     console.log("woof woof");
   }
 }
+
+const dog = new Dog();
