@@ -214,3 +214,10 @@ class Dog extends Animal {
 }
 
 const dog = new Dog();
+
+// interface and classes
+
+// Creating an animal interface
+interface Animal {
+  speak(): void;
+}
