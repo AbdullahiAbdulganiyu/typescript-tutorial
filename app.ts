@@ -243,3 +243,14 @@ class Dog2 implements Animal {
     console.log(`I am ${this.name} and I am ${this.color}`);
   }
 }
+
+class Dog3 {
+  // declaring a variable as static makes it possible to track the instance of the variable
+  static instanceCount: number = 0;
+  name: string;
+
+  constructor(name: string) {
+    Dog3.instanceCount++;
+    this.name = name;
+  }
+}
