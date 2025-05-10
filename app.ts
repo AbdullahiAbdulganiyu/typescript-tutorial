@@ -254,3 +254,11 @@ class Dog3 {
     this.name = name;
   }
 }
+
+const dog31 = new Dog3("Tim");
+console.log(Dog3.instanceCount);
+// the output would be 1 because that is the first instance
+
+const dog32 = new Dog3("John");
+console.log(Dog3.instanceCount);
+// the output would be 2 because that is the second instance
