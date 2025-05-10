@@ -221,3 +221,24 @@ const dog = new Dog();
 interface Animal {
   speak(): void;
 }
+
+// an interface is inherited using "implements" as against class that is inherited using extends
+class Dog2 implements Animal {
+  name: string;
+  color: string;
+
+  constructor(name: string, color: string) {
+    this.name = name;
+    this.color = color;
+  }
+  makeSound(duration: number): void {
+    throw new Error("Method not implemented.");
+  }
+  move(duration: number): void {
+    throw new Error("Method not implemented.");
+  }
+
+  speak() {
+    console.log(`I am ${this.name} and I am ${this.color}`);
+  }
+}
