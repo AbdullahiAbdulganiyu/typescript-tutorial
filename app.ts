@@ -238,6 +238,7 @@ class Dog2 implements Animal {
     throw new Error("Method not implemented.");
   }
 
+  //   a method created in the interface must be implemented / added to the implementation
   speak() {
     console.log(`I am ${this.name} and I am ${this.color}`);
   }
