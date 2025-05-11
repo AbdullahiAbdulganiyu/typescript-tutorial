@@ -256,6 +256,7 @@ class Dog3 {
     this.name = name;
   }
 
+  // creating a static method that can only be accessed by the actual class and not the instatnce of the class
   static decreaseCount() {
     this.instanceCount--;
   }
