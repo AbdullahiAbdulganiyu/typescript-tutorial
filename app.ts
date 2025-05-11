@@ -255,6 +255,10 @@ class Dog3 {
     Dog3.instanceCount++;
     this.name = name;
   }
+
+  static decreaseCount() {
+    this.instanceCount--;
+  }
 }
 
 const dog31 = new Dog3("Tim");
