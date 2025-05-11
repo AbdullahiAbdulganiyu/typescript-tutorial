@@ -274,3 +274,15 @@ console.log(Dog3.instanceCount);
 
 // calling the static method on the actual class and not the instance of the class
 Dog3.decreaseCount();
+
+class DataStore {
+  private items: number[] = [];
+
+  addItem(item: number): void {
+    this.items.push(item);
+  }
+
+  getItem(index: number): number {
+    return this.items[index];
+  }
+}
