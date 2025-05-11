@@ -278,10 +278,12 @@ Dog3.decreaseCount();
 class DataStore {
   private items: number[] = [];
 
+  // adding an  item to items array
   addItem(item: number): void {
     this.items.push(item);
   }
 
+  // getting an item form the items array
   getItem(index: number): number {
     return this.items[index];
   }
