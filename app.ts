@@ -246,6 +246,8 @@ class Dog2 implements Animal {
 
 class Dog3 {
   // declaring a variable as static makes it possible to track the instance of the variable
+  // decalaring a variable as static makes it only available on the actual class and not the instace of the class
+  // for that reason it can only be accessed using the name of the actuall class
   static instanceCount: number = 0;
   name: string;
 
