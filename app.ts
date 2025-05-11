@@ -287,4 +287,9 @@ class DataStore {
   getItem(index: number): number {
     return this.items[index];
   }
+
+  // removing an item from the items array
+  removeItem(index: number): void {
+    this.items.splice(index, 1);
+  }
 }
