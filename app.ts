@@ -263,9 +263,11 @@ class Dog3 {
 }
 
 const dog31 = new Dog3("Tim");
+// accessing the static method by the actual class and not the instance of the class
 console.log(Dog3.instanceCount);
 // the output would be 1 because that is the first instance
 
 const dog32 = new Dog3("John");
+// accessing the static method by the actual class and not the instance of the class
 console.log(Dog3.instanceCount);
 // the output would be 2 because that is the second instance
