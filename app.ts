@@ -305,3 +305,8 @@ class DataStore<T> {
 // making the return type a string
 // coutesy of generic data type
 const dataG = new DataStore<string>();
+
+interface User {
+  name: string;
+  age: number;
+}
