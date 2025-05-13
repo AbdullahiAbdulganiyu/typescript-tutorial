@@ -292,4 +292,9 @@ class DataStore {
   removeItem(index: number): void {
     this.items.splice(index, 1);
   }
+
+  // getting all the items
+  getAllItems(): number[] {
+    return this.items;
+  }
 }
