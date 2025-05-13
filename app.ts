@@ -357,3 +357,7 @@ interface ContactDetails {
   email: string;
   phone: string;
 }
+
+// creating an intersection using type aliasing
+// intersection means any instance or implementation must contain both data types or instance
+type BusinessContact = BusinessPartner & ContactDetails;
