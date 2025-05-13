@@ -310,3 +310,6 @@ interface User {
   name: string;
   age: number;
 }
+
+// making the return type of user inteface
+const dataG2 = new DataStore<User>();
