@@ -301,3 +301,7 @@ class DataStore<T> {
     return this.items;
   }
 }
+
+// making the return type a string
+// coutesy of generic data type
+const dataG = new DataStore<string>();
