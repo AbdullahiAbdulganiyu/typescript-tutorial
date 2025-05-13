@@ -278,15 +278,15 @@ Dog3.decreaseCount();
 class DataStore<T> {
   // adding <T> to enable us specify the data we want the instatce of the class create
 
-  private items: number[] = [];
+  private items: T[] = [];
 
   // adding an  item to items array
-  addItem(item: number): void {
+  addItem(item: T): void {
     this.items.push(item);
   }
 
   // getting an item form the items array
-  getItem(index: number): number {
+  getItem(index: number): T {
     return this.items[index];
   }
 
@@ -296,7 +296,7 @@ class DataStore<T> {
   }
 
   // getting all the items
-  getAllItems(): number[] {
+  getAllItems(): T[] {
     return this.items;
   }
 }
