@@ -313,3 +313,12 @@ interface User {
 
 // making the return type of user inteface
 const dataG2 = new DataStore<User>();
+
+// creating a generic function
+// the function can either be of type K or V
+function getValues<K, V>(key: K, value1: V, value2: V): V {
+  if (key) {
+    return value1;
+  }
+  return value2;
+}
