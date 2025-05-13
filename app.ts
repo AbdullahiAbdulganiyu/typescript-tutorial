@@ -361,3 +361,9 @@ interface ContactDetails {
 // creating an intersection using type aliasing
 // intersection means any instance or implementation must contain both data types or instance
 type BusinessContact = BusinessPartner & ContactDetails;
+
+const contact: BusinessContact = {
+  name: "tim",
+  email: "tim@gmail.com",
+  phone: "070",
+};
