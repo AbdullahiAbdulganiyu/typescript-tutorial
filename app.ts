@@ -277,6 +277,7 @@ Dog3.decreaseCount();
 
 class DataStore<T> {
   // adding <T> to enable us specify the data we want the instatce of the class create
+  // a.k.a making the class generic
 
   private items: T[] = [];
 
