@@ -322,3 +322,6 @@ function getValues<K, V>(key: K, value1: V, value2: V): V {
   }
   return value2;
 }
+
+const n1: number = 1;
+const n2: number = 2;
