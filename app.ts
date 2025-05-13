@@ -332,3 +332,11 @@ getValues("hello", n1, n2);
 
 // 2. by specifying the return type
 getValues<string, number>("hi", n1, n2);
+
+// type aliasing
+// which is useful when we want to define the return type of something that is not neccessilly an object
+type Coordinates = [number, number];
+
+function compareCoords(p1: Coordinates, p2: Coordinates) {
+  return [p1[0], p2[1]];
+}
