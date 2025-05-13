@@ -342,3 +342,7 @@ type Coordinates = [number, number];
 function compareCoords(p1: Coordinates, p2: Coordinates) {
   return [p1[0], p2[1]];
 }
+
+// creating a union using type aliasing
+// code below means it can either be string or number or boolean
+type stringOrNumberOrBoolean = string | number | boolean;
