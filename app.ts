@@ -275,7 +275,9 @@ console.log(Dog3.instanceCount);
 // calling the static method on the actual class and not the instance of the class
 Dog3.decreaseCount();
 
-class DataStore {
+class DataStore<T> {
+  // adding <T> to enable us specify the data we want the instatce of the class create
+
   private items: number[] = [];
 
   // adding an  item to items array
