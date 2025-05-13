@@ -346,3 +346,14 @@ function compareCoords(p1: Coordinates, p2: Coordinates) {
 // creating a union using type aliasing
 // code below means it can either be string or number or boolean
 type stringOrNumberOrBoolean = string | number | boolean;
+
+// creating some interface
+
+interface BusinessPartner {
+  name: string;
+}
+
+interface ContactDetails {
+  email: string;
+  phone: string;
+}
