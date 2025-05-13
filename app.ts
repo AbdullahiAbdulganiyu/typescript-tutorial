@@ -325,3 +325,7 @@ function getValues<K, V>(key: K, value1: V, value2: V): V {
 
 const n1: number = 1;
 const n2: number = 2;
+
+// calling the generic function can be in either of two ways
+// 1. without specifying the return type, in whose case it could be determined by the parameters that are passed
+getValues("hello", n1, n2);
