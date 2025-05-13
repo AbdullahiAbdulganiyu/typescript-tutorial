@@ -367,3 +367,8 @@ const contact: BusinessContact = {
   email: "tim@gmail.com",
   phone: "070",
 };
+
+// type guards
+// 1. typeof
+// 2. instanceof (used to check if a class is an instance of another)
+// 3. in
