@@ -485,4 +485,5 @@ const todop: TodoPreview = {
 // 5. omit: it ommits any property specified in it
 // e.g
 
+// omiting the id property of the TodoP
 type TodoPreview2 = Omit<TodoP, "id">;
