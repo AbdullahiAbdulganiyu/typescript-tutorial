@@ -387,3 +387,22 @@ function addN(value: StringOrNumber) {
     return value + 1;
   }
 }
+
+// Type narrowing
+
+type Log = Warning | Info | Success;
+
+interface Warning {
+  type: "warning";
+  msg: string;
+}
+
+interface Info {
+  type: "info";
+  text: string;
+}
+
+interface Success {
+  type: "success";
+  message: string;
+}
