@@ -393,16 +393,19 @@ function addN(value: StringOrNumber) {
 type Log = Warning | Info | Success;
 
 interface Warning {
+  // tag
   type: "warning";
   msg: string;
 }
 
 interface Info {
+  // tag
   type: "info";
   text: string;
 }
 
 interface Success {
+  // tag
   type: "success";
   message: string;
 }
