@@ -475,3 +475,8 @@ interface TodoP {
 }
 
 type TodoPreview = Pick<TodoP, "title" | "completed">;
+
+const todop: TodoPreview = {
+  title: "good",
+  completed: true,
+};
