@@ -444,3 +444,16 @@ interface TodoR {
 }
 
 const myTodo: Readonly<TodoR> = { title: "Learn TypeScript" };
+
+// 3. Record: makes it possible to have a key and the type as a value
+// e.g
+
+interface PageInfo {
+  title: string;
+}
+
+const pages: Record<string, PageInfo> = {
+  home: { title: "Home" },
+  about: { title: "About" },
+  contact: { title: "Contact" },
+};
