@@ -4,6 +4,8 @@
 // 3. npm install typescript --save-dev
 // 4. npx tsc --init
 
+import { sub } from "./util";
+
 let x: number = 3;
 let y: string = "Three";
 let z: boolean = true;
