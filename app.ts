@@ -465,3 +465,13 @@ const pageNumber: Record<number, PageInfo> = {
   1: { title: "About" },
   2: { title: "Contact" },
 };
+
+// 4. Pick: allows to pick some of the interface properties
+// e.g
+interface TodoP {
+  id: number;
+  title: string;
+  completed: boolean;
+}
+
+type TodoPreview = Pick<TodoP, "title" | "completed">;
