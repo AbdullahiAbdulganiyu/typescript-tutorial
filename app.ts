@@ -474,6 +474,7 @@ interface TodoP {
   completed: boolean;
 }
 
+// picking title and completed only the TodoP properties, i.e the type would only contain both of them
 type TodoPreview = Pick<TodoP, "title" | "completed">;
 
 const todop: TodoPreview = {
