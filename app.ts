@@ -452,12 +452,14 @@ interface PageInfo {
   title: string;
 }
 
+// making the key of string type and the value of PageInfo type
 const pages: Record<string, PageInfo> = {
   home: { title: "Home" },
   about: { title: "About" },
   contact: { title: "Contact" },
 };
 
+// making the key of number type and the value of PageInfo type
 const pageNumber: Record<number, PageInfo> = {
   0: { title: "Home" },
   1: { title: "About" },
