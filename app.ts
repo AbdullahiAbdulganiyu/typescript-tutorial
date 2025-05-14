@@ -390,6 +390,7 @@ function addN(value: StringOrNumber) {
 
 // Type narrowing
 
+// Discriminated unuion because the have some different on each of them but having thesame property name (type)
 type Log = Warning | Info | Success;
 
 interface Warning {
