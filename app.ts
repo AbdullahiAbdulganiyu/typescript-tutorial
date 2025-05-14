@@ -372,3 +372,18 @@ const contact: BusinessContact = {
 // 1. typeof
 // 2. instanceof (used to check if a class is an instance of another)
 // 3. in
+
+// type narrowing is making the type of a variable, function , etc to a particular type after creating a type union
+// eg
+
+// creating a type union
+type StringOrNumber = string | number;
+
+function addN(value: StringOrNumber) {
+  // using type guard to narrow the type to string
+  if (typeof value === "string") {
+    return value + "1";
+  } else {
+    return value + 1;
+  }
+}
