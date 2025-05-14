@@ -424,3 +424,14 @@ function handleMessage(log: Log) {
       break;
   }
 }
+
+// Utility type
+// 1. Partial : makes all of the different properties in the type optional
+// e.g
+
+interface Todo {
+  title: string;
+  description: string;
+}
+
+function partialUtility(todo: Partial<Todo>) {}
