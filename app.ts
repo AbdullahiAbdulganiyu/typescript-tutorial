@@ -435,3 +435,12 @@ interface Todo {
 }
 
 function partialUtility(todo: Partial<Todo>) {}
+
+// 2. Readonly: makes the properties of the type readonly i.e they cannont be changes
+// e.g
+
+interface TodoR {
+  title: string;
+}
+
+const myTodo: Readonly<TodoR> = { title: "Learn TypeScript" };
