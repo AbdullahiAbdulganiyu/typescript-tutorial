@@ -410,3 +410,17 @@ interface Success {
   type: "success";
   message: string;
 }
+
+function handleMessage(log: Log) {
+  switch (log.type) {
+    case "warning":
+      console.log(log.msg);
+      break;
+    case "info":
+      console.log(log.text);
+      break;
+    case "success":
+      console.log(log.message);
+      break;
+  }
+}
