@@ -457,3 +457,9 @@ const pages: Record<string, PageInfo> = {
   about: { title: "About" },
   contact: { title: "Contact" },
 };
+
+const pageNumber: Record<number, PageInfo> = {
+  0: { title: "Home" },
+  1: { title: "About" },
+  2: { title: "Contact" },
+};
