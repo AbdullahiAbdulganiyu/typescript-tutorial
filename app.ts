@@ -481,3 +481,8 @@ const todop: TodoPreview = {
   title: "good",
   completed: true,
 };
+
+// 5. omit: it ommits any property specified in it
+// e.g
+
+type TodoPreview2 = Omit<TodoP, "id">;
