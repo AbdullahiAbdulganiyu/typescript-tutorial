@@ -5,6 +5,7 @@
 // 4. npx tsc --init
 
 import { sub } from "./util";
+import { add as Add } from "./util";
 
 let x: number = 3;
 let y: string = "Three";
