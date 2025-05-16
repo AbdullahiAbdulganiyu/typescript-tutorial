@@ -501,3 +501,5 @@ namespace Utils {
   }
   export const NAAMA = "nama";
 }
+
+const resultN = Utils.myFunction();
