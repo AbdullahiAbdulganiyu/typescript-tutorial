@@ -492,6 +492,7 @@ const todop: TodoPreview = {
 // omiting the id property of the TodoP
 type TodoPreview2 = Omit<TodoP, "id">;
 
+// Namespace
 namespace Utils {
   export class myClass {}
   export function myFunction() {}
