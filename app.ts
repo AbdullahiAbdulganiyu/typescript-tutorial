@@ -498,4 +498,5 @@ namespace Utils {
   export interface NewType {
     name: string;
   }
+  export const NAAMA = "nama";
 }
