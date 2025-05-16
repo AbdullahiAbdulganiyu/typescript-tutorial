@@ -502,4 +502,6 @@ namespace Utils {
   export const NAAMA = "nama";
 }
 
+// using the namespace
+// the namespace can be used by using the name and any of the properties in the namespace like in the eaxmple below
 const resultN = Utils.myFunction();
