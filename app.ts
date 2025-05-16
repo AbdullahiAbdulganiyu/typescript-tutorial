@@ -495,4 +495,7 @@ type TodoPreview2 = Omit<TodoP, "id">;
 namespace Utils {
   export class myClass {}
   export function myFunction() {}
+  export interface NewType {
+    name: string;
+  }
 }
