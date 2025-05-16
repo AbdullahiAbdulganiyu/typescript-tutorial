@@ -491,3 +491,7 @@ const todop: TodoPreview = {
 
 // omiting the id property of the TodoP
 type TodoPreview2 = Omit<TodoP, "id">;
+
+namespace Utils {
+  export class myClass {}
+}
