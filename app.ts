@@ -510,3 +510,7 @@ const resultN = Utils.myFunction();
 interface LastOne {
   response: string;
 }
+
+interface Chioce {
+  intrested: boolean;
+}
