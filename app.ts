@@ -506,3 +506,7 @@ namespace Utils {
 // the namespace can be used by using the name and any of the properties in the namespace like in the eaxmple below
 const resultN = Utils.myFunction();
 // namespace dont need to be impported for them to be used in another file
+
+interface LastOne {
+  response: string;
+}
