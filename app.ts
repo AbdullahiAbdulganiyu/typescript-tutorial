@@ -514,3 +514,8 @@ interface LastOne {
 interface Chioce {
   intrested: boolean;
 }
+
+const questionaire: LastOne & Chioce = {
+  response: "Nothing much",
+  intrested: true,
+};
