@@ -512,6 +512,7 @@ interface LastOne {
   response: string;
 }
 
+// creating an interface that has boolean type
 interface Chioce {
   intrested: boolean;
 }
