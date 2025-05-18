@@ -507,7 +507,7 @@ namespace Utils {
 const resultN = Utils.myFunction();
 // namespace dont need to be impported for them to be used in another file
 
-// creating an interace that returns string
+// creating an interace that has string type
 interface LastOne {
   response: string;
 }
