@@ -517,6 +517,7 @@ interface Chioce {
   intrested: boolean;
 }
 
+// creating a questinaire object
 const questionaire: LastOne & Chioce = {
   response: "Nothing much",
   intrested: true,
