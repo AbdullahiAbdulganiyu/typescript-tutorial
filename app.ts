@@ -522,3 +522,4 @@ const questionaire: LastOne & Chioce = {
   response: "Nothing much",
   intrested: true,
 };
+// the questoinaire must have both lastone and chioce type
