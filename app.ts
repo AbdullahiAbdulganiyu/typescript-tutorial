@@ -518,6 +518,7 @@ interface Chioce {
 }
 
 // creating a questinaire object
+// doing type intersection
 const questionaire: LastOne & Chioce = {
   response: "Nothing much",
   intrested: true,
